@@ -1,0 +1,38 @@
+HTML - conteúdo
+para inserir conteúdo o HTML tem tags - imagem - texto - formulário - componentes
+tudo em minúscula
+para indicar que é uma tag precisa:
+<nome da tag> Conteúdo inserir </nome da tag>
+Início Fim
+97% dos casos as tags têm início e fim
+3% - elas não têm fechamento - tags indicam um conteúdo "AUTOMÁTICA"
+
+Apenas início - sem fechamento
+Ex. Título principal ==> <h1> Primeira aula </h1>
+Ex. imagem ==> <img src="caminho/nome do arquivo">
+
+Cabeçalhos de títulos - 1 até 6 - 1 maior - 6 menor
+tags
+h1 - h2 - h3 - h4 - h5 - h6
+MAIOR.....................................menor
+Boa prática == Título prinicipal sempre h1 - Apenas 1 h1 por página
+Subtítulos h2 = h3 - no máximo h
+Texto da página deve ser um parágrafo
+Tag p
+
+ Formatação CSS Externa:
+Regra CSS
+seletor = quem será formatado (tag)
+propriedade = o que eu quero formatar
+valor = como a propriedade ficará
+
+padrão de cor RGB - Red - Green - Blue
+2 padrões de códigos para cor
+0 - 9 - A B C D E F
+Hexadecimal ==> #336699 - #666
+
+rgb - 0 - 255
+rgb(45, 99, 180):
+
+https://fonts.google.com/
+

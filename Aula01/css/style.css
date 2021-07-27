@@ -1,0 +1,22 @@
+/* Importar as fontes da internet - Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto:wght@300&display=swap');
+
+p{
+    color: blue;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1{
+    color: brown;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    color: blueviolet;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+
