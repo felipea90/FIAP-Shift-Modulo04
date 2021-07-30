@@ -1,0 +1,75 @@
+Seletores de tag:   tag a ser formatada
+
+Seletores de class: regra CSS que define algum tipo de formatação
+                    Como funciona: na CSS nome para classe e atribui as regras
+                    Antes do nome deve ser inserido o sinal de ponto final (.)
+                    .nome__da__class { regra css }
+                    Comp funciona: no HTML usar o atributo class na tag que queremos
+                    aplicar a classe.
+                    Classes são reutilizáveis - em qualquer elemento
+                    Classes mais genéricas: vários elementos
+                    classes mais especialistas: alguns elementos
+
+Seletor de ID:      Identificador de elementos
+                    Tags HTML podem ter ID
+                    JavaScript - pegar informações da página com o ID
+                    Por padrão e boa prática dois elementos não podem ter o mesmo ID
+                    Não podem se repetir
+                    HTML --> Atributo ID na Tag desejada
+                    CSS --> Chamar o Id com o sinal de #
+
+Containers:         Caixas que recebem conteúdo
+                    Colocar "caixas" dentro de outras caixas
+                    HTML  --> tag <div> cria a "caixa"
+                    HTML5 --> código semântico - melhor escrita do código
+                              Tags semânticas para as divs = nomes didáticos 
+                              que permitem melhor identificação do conteúdo 
+                              inserido no container
+                    Divs ocupam todo o espaço da linha
+
+Box Model:          Define como a <div> é posicionada e é composto por:
+
+                    Margin  --> distância externa dos elementos
+                                top - right - bottom - left (clock wise)
+
+                                Se definir valor apenas para margin (pura):
+                                1 valor   --> o mesmo valor aplica para todos os lados
+
+                                2 valores --> 1 valor Top/Bottom
+                                              2 valor Right/Left
+
+                                3 valores --> 1 valor Top
+                                              2 valor Right/Left
+                                              3 valor Bottom
+
+                                4 valores --> 1 valor Top
+                                              2 valor Right
+                                              3 valor Bottom
+                                              4 valor Left
+
+                    Border  --> contorno do elemento
+                                top - right - bottom - left (clock wise)
+                                Declaração: width - Style - Color
+
+                    Padding --> preenchimento do elemento,
+                                distância entre o conteúdo e as extremidades da div
+                                Aplicam-se as mesmas regras da 'Margin'
+                                Pode acabar 'aumentando' o tamanho da Div
+                    
+                    box-sizing: border-box --> Aplica os valores do Padding 
+                                               sem que haja alteração no tamanho 
+                                               original do container
+
+                    Content --> conteúdo da div
+
+Links:              Através da tag <a href="">
+
+                    target="blank" abre o link em uma nova aba
+
+                    remover sublinhado text-decoration=none
+
+                    :hover quando o mouse estiver sobre o elemento 
+                    ele aplicará um efeito conforme a definição do estilo
+
+Fontes como ícones: https://fontawesome.com/
+
