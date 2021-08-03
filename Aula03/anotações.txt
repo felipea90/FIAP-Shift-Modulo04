@@ -1,0 +1,38 @@
+header - container de cabeçalho da página ou de algum elemento
+nav - container que indica a área de navegação - links
+Opções do menu devem estar em uma lista
+ul - não ordenada Marcadores -pontinho preto ao lado de cada item
+ol - ordenada: 1 - 2 - 3 - 4- 5
+li - itens da lista
+
+Atalho --> ul>li*4>a{Link}
+<ul>
+    <li><a href="">Link</a></li>
+    <li><a href="">Link</a></li>
+    <li><a href="">Link</a></li>
+    <li><a href="">Link</a></li>
+</ul>   
+
+opçoes do menu dentro dos itens da lista
+usar a tag <a> para fazer
+px é uma medida fixa - ela nunca tem alteração
+
+Unidade de medida baseada no viewport da página
+vh - 1vh = 1%
+vw - 1vw = 1%
+
+Aplicar ao elemento pai a propriedade flex que irá torná-lo um flex container
+os elementos do container pai são chamados de flex-items
+Flex ocupa 100% do tamanho do container
+o alinhamento só será aplicado aos "filhos diretos"
+Quando aplicado o flex os items filhos ficarão um ao lado do outro - row Padrão
+align-items: alinhamento vertical
+justify-content: alinhamento horizontal
+
+em = segue o tamanho da fonte do elemento pai, caso não esteja definido, ele pega do elemento pai acima. 1 em = 1x tamanho do font-size
+
+rem = tamanho da fonte do elemento root, normalmente o padrão é 16px
+
+tag main - recebe o conteúdo principal da página
+tag article - conteúdo que pode ser usado em qualquer outra área da página, possível receber outros containers de conteúdo
+tag section - seção de conteúdo que pertence (está em) a algum outro elemento (em sua maioria)
