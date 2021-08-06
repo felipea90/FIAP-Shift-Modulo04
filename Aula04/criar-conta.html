@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FontsAwsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+        <!-- Configuração CSS -->
+        <style type="text/css">
+
+        textarea{
+            resize: none;
+            height: 150px;
+        }
+
+        </style>
+
+    <title>Criar Conta</title>
+</head>
+
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="./index.html">
+                Shift
+                <i class="fas fa-torii-gate"></i>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Criar Conta
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="bg-dark text-light mt-4 p-4">Criar Conta</h1>
+        <!-- form de dados -->
+        <form action="gravar-dados.html" method="POST" id="dados" name="dados">
+            <div class="row">
+
+                <!-- primeiro campo -->
+                <div class="col-md-4 my-3">
+                    <label for="usuario">Usuário:</label>
+                    <input class="form-control" type="text" name="usuario" id="usuario"
+                        placeholder="Ex: Nome do usuário" maxlength="20" minlength="5" required>
+                </div>
+
+                <!-- segundo campo -->
+                <div class="col-md-4 my-3">
+                    <label for="usuario">Senha:</label>
+                    <input class="form-control" type="password" name="senha" id="senha" placeholder="Ex: senha"
+                        maxlength="20" minlength="5" required>
+                </div>
+
+                <!-- terceiro campo -->
+                <div class="col-md-4 my-3">
+                    <label for="usuario">E-Mail:</label>
+                    <input class="form-control" type="email" name="email" id="email" placeholder="Ex: email@email.com"
+                        maxlength="100" minlength="5" required>
+                </div>
+
+                <!-- quarto campo -->
+                <div class="col-md-4 my-3">
+                    <label for="usuario">Data Nascimento:</label>
+                    <input class="form-control" type="date" name="nascimento" id="nascimento"  required>
+                </div>
+
+                <!-- quinto campo -->
+                <div class="col-md-4 my-3">
+                    <label for="usuario">Área de Atuação:</label>
+                    <select class="form-select" name="genero" id="genero">
+                        <option value="0" selected disabled>Selecione sua Opção</option>
+                        <option value="1">Banco de Dados</option>
+                        <option value="2">Front End</option>
+                        <option value="3">Back End</option>
+                        <option value="4">Devops</option>
+                    </select>
+                </div>
+                
+                <!-- sexto campo -->
+                <div class="col-md-4 my-3">
+                    <p>Gênero:</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="genero" id="Masculino" value="Masculino">
+                        <label class="form-check-label" for="Masculino">Masculino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="genero" id="Feminino" value="Feminino">
+                        <label class="form-check-label" for="Feminino">Feminino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="genero" id="Outros" value="Outros">
+                        <label class="form-check-label" for="Outros">Outros</label>
+                    </div>
+                </select>
+            </div>
+
+            <!-- sétimo campo -->
+            <div class="col-md-4 my-3">
+                <p>Tipo de Conta:</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="conta" id="free" value="free">
+                    <label class="form-check-label" for="free">Conta Free</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="conta" id="Premium" value="Premium">
+                    <label class="form-check-label" for="Premium">Conta Premium</label>
+                </div>
+            </div>
+
+            <!-- oitavo campo -->
+            <div class="col-md-8 my-3">
+                <label for="mensagem">Conte sobre você:</label>
+                <textarea class="form-control" name="descpessoal" id="descpessoal" cols="30" placeholder="Ex: Descrição sobre você"></textarea>
+            </div>
+
+            <!-- Botões de Ação -->
+            <div class="col-md-12 my-3 d-flex justify-content-end">
+                <input type="submit" class="btn btn-outline-dark me-3" value="ENVIAR">
+                <button type="reset" class="btn btn-outline-danger">LIMPAR DADOS</button>
+            </div>
+
+        </div>
+    </form>
+</div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
